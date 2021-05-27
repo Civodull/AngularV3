@@ -1,0 +1,54 @@
+/* Le cadre bleu */
+
+.btn-outline-dark {
+    float: right;
+}
+
+.bleu {
+    position: absolute;
+    width: 503.61px;
+    height: 548px;
+    background: #667EEA;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+}
+
+
+/* Le formulaire/cadre blanc */
+
+.card {
+    position: relative;
+    width: 475px;
+    height: 522.74px;
+    left: 15px;
+    top: 12px;
+    padding-bottom: 10px;
+    background: #FFFFFF;
+    box-shadow: 6px 0px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+}
+
+input {
+    background: #EDF2F7;
+}
+
+.container {
+    position: relative;
+    width: 1128px;
+    height: auto;
+    padding: 25px;
+    background: #FFFFFF;
+}
+
+.titre {
+    position: relative;
+    width: 90px;
+    height: 20px;
+    left: 198px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    color: #667EEA;
+}

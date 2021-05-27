@@ -1,0 +1,8 @@
+.fal {
+    float: right;
+    /* color: #f359 */
+}
+
+.fal :hover {
+    color: #f359
+}

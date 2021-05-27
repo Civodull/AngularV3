@@ -1,0 +1,46 @@
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+}
+
+.deconnect {
+    margin-bottom: 2px;
+}
+
+@media screen and (max-width: (500px)) {
+    .deconnect {
+        margin-bottom: 2px;
+        margin-left: 70px;
+    }
+}
+
+.profile {
+    text-align: center;
+}
+
+.information {
+    position: absolute;
+    width: 133.78px;
+    height: 28.71px;
+    right: 500px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.information span {
+    position: absolute;
+    width: 367.41px;
+    height: 28.71px;
+    left: 50%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,68 @@
+<div class="container pt-4">
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="card text-center">
+
+                <div class="card-body">
+                    <div *ngIf="Loading" class="spinner-border " role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <span *ngIf="submitted && creatUser.invalid" style="color:red">Tous les champs sont obligatoire</span>
+                    <div *ngIf="!isSignedIn">
+                        <form class="mt-4" [formGroup]="creatUser">
+                            <img src="../../assets/img/user.png" style="width:120px;height: 100px;top: 0px;">
+                            <h5 class="titre">{{titre}}</h5>
+                            <h6 class="text">connectez-vous à votre compte</h6>
+                            <!-- debut des inputs de connexion -->
+                            <div class="content" role="main">
+                                <!-- <div *ngIf="afAuth.authState | async as user">
+                                    Welcome {{user.displayName}} !!!
+                                </div> -->
+                                <div class="form-group">
+                                    <div class="action-buttons-container">
+                                        <button class="fab fa-google-plus-square" *ngIf="(afAuth.authState | async) === null" (click)="sigGoogle()">Sign-In with Google</button>
+                                        <!-- <button class="action-button" *ngIf="(afAuth.authState | async)" (click)="signOutGoogle()">Sign-Out</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FIn de connexion google -->
+                            <div class="row mt-2 lignes">
+                                <div class="col">
+                                    <hr class="ligneUn">
+                                </div>ou
+                                <div class="col">
+                                    <hr class="ligneDeux">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col">
+                                    <input type="email" class="form-control form-control-lg" formControlName="email" autocomplete="off" placeholder="pseudo ou email" #email>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <input type="password" class="form-control form-control-lg" formControlName="password" autocomplete="off" placeholder="Mot de passe" #password>
+                                </div>
+                            </div>
+                            <div class="row mt-2 ">
+                                <div class="col">
+                                    <a routerLink="/connexion"> réinitialiser le mot de passe ici !</a>
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2 mt-3">
+                                <button class="btn btn-primary" (click)="signIn(email.value,password.value)">Valider</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <app-navbar (isLogout)="handleLogout()"> </app-navbar> -->
+<!-- Toolbar
+<div class="toolbar" role="banner">
+    <span>Welcome</span>
+    <div class="spacer"></div>
+</div>
+ -->
